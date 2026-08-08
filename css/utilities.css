@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+}
+:root {
+  --background-hero: #075e54;
+  --textcolor: #075e54;
+  --ligh-bg: #e5f5ef;
+  --hover: #25d366;
+}
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 12rem;
+  width: 90%;
+}

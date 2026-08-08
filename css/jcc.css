@@ -1,0 +1,156 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-hero);
+  padding: 1.2rem 12rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+nav a:hover {
+  color: var(--hover);
+}
+.hero {
+  background: var(--ligh-bg);
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 36px;
+  color: var(--textcolor);
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 18px;
+  margin: 15px auto 30px;
+  max-width: 700px;
+}
+.hero button {
+  background: var(--hover);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.section-title {
+  text-align: center;
+  color: #075e54;
+  margin: 40px 0 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.how-it-works {
+  background: #f9f9f9;
+  padding: 50px 20px;
+}
+.how-it-works .grid .card {
+  color: var(--textcolor);
+}
+.courses .grid,
+.programs .grid,
+.instructors .grid,
+.how-it-works .grid,
+.reviews .list {
+  display: grid;
+  gap: 20px;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.courses .grid,
+.how-it-works .grid,
+.programs .grid,
+.instructors .grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card h4 {
+  color: #075e54;
+  margin-bottom: 8px;
+}
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.filter-buttons button {
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: var(--hover);
+  color: white;
+}
+.instructors img {
+  width: 100%;
+  border-radius: 8px;
+}
+.reviews .list {
+  grid-template-columns: 1fr;
+}
+.review {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+#contact form {
+  max-width: 450px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#contact input,
+#contact textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+#contact button {
+  background: #25d366;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+#contact button:hover {
+  border-radius: 25px;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

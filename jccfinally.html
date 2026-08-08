@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasseh Code Camp</title>
+    <link rel="stylesheet" href="css/jcc.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div class="logo">JCC</div>
+        <nav>
+          <a href="#hero">Home</a>
+          <a href="#how">How It Works</a>
+          <a href="#courses">Courses</a>
+          <a href="#programs">Programs</a>
+          <a href="#instructors">Instructors</a>
+
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+    </div>
+    <section class="hero" id="hero">
+      <h1>Learn Anything, Anytime, Anywhere</h1>
+      <h1>Learn. Build. Excel. With Jasseh Code Camp</h1>
+      <p>
+        Join Jasseh Code Camp and gain real-world tech skills — from
+        fundamentals to specialization and internship placement. Build websites,
+        apps, and grow your programming skills from scratch. unlock tech careers
+        with JCC.
+      </p>
+      <button id="hero-btn">Get Started Now</button>
+    </section>
+
+    <section class="how-it-works" id="how">
+      <div class="section-title">How It Works</div>
+      <div class="grid">
+        <div class="card">
+          <h3>Choose a Course</h3>
+          <p>
+            Browse our extensive library of courses and find what interests you.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Get Certified</h3>
+          <p>Receive a certificate to showcase your new skills to employers.</p>
+        </div>
+        <div class="card">
+          <h3>Learn Online</h3>
+          <p>Engage with video lectures, quizzes, and hands-on projects.</p>
+        </div>
+        <div class="card">
+          <h3>Level 0 — Pre‑semester</h3>
+          <p>
+            Start with Intro to Tech & Programming for beginners, covering
+            computing basics, Scratch, HTML, and CSS. covering computing basics
+            and web fundamentals.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Level 1 — Semester 1</h3>
+          <p>
+            Build your foundation with computer science fundamentals including
+            Python and web basics. Command line basics, Git & GitHub, and
+            problem‑solving.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Level 2 — Semester 2</h3>
+          <p>
+            Choose specialization in frontend, backend, fullstack, data
+            engineering, or mobile development.
+          </p>
+        </div>
+        <div class="card" style="grid-column-start: 3; grid-column-end: 5">
+          <h3>Level 3 — Internship</h3>
+          <p>
+            Advanced training and real company internship with paid experience
+            with partner companies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="courses" id="courses">
+      <div class="section-title">Featured Courses</div>
+      <div class="filter-buttons">
+        <button class="active" id="all" onclick="filter('all', this)">
+          All
+        </button>
+        <button onclick="filter('beginner', this)">Beginner</button>
+        <button onclick="filter('intermediate', this)">Intermediate</button>
+      </div>
+      <div class="grid" id="courseGrid">
+        <div class="card all beginner">
+          <h4>ITP101 – Intro to Tech & Programming</h4>
+          <p>Fundamentals of computing, web basics with Python, HTML & CSS.</p>
+        </div>
+        <div class="card all intermediate">
+          <h4>JS101 – JavaScript Fundamentals</h4>
+          <p>Bridge CS foundations with developer tracks.</p>
+        </div>
+        <div class="card all intermediate">
+          <h4>TS101 – TypeScript Fundamentals</h4>
+          <p>Advanced JS with type safety and framework readiness.</p>
+        </div>
+        <div class="card all intermediate">
+          <h4>CS001 – Computer Science Fundamentals</h4>
+          <p>Comprehensive CS with web and backend basics.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="section-title">Specialization Tracks</div>
+      <div class="grid">
+        <div class="card">
+          <h4>Frontend Development</h4>
+          <p>Build interactive UI with HTML, CSS, React, and modern tools.</p>
+        </div>
+        <div class="card">
+          <h4>Backend Development</h4>
+          <p>APIs and backend systems using Node.js and databases.</p>
+        </div>
+        <div class="card">
+          <h4>Fullstack Development</h4>
+          <p>Complete web app mastery from UI to backend.</p>
+        </div>
+        <div class="card">
+          <h4>Data Engineering Program</h4>
+          <p>Master data pipelines, analytics, and database systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructors" id="instructors">
+      <div class="section-title">Meet Our Instructors</div>
+      <div class="grid">
+        <div class="card">
+          <img src="omar_jasseh.webp" alt="Omar Jasseh" />
+          <h4>Omar Jasseh</h4>
+          <p>Founder & Chief Software Architect.</p>
+        </div>
+        <div class="card">
+          <img src="abdou_jammeh.webp" alt="Abdou Jammeh" />
+          <h4>Abdou Jammeh</h4>
+          <p>Backend Lead & Tech Lead.</p>
+        </div>
+        <div class="card">
+          <img src="ansumana_badjie.webp" alt="Ansumana Badjie" />
+          <h4>Ansumana Badjie</h4>
+          <p>Frontend Lead & Instructor.</p>
+        </div>
+        <div class="card">
+          <img src="adama_jammeh.webp" alt="Adama Jammeh" />
+          <h4>Adama Jammeh</h4>
+          <p>QA Engineer & Assistant.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">Contact Us</div>
+      <form>
+        <input type="text" placeholder="Name" required />
+        <input type="number" placeholder="1234567" required />
+        <input type="email" placeholder="Email123@gmail.com" required />
+        <textarea
+          placeholder="Tell us what do you  want to know about? "
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit" id="sendbtn">Send</button>
+      </form>
+    </section>
+
+    <footer>&copy; 2026 Jasseh Code Camp – All rights reserved.</footer>
+    <script src="js/jcc.js"></script>
+  </body>
+</html>
